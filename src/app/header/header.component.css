@@ -3,30 +3,33 @@
 }
 .nav{
     display: flex;
-
+    align-items: center;
 }
 .nav a{
     text-decoration: none;
     letter-spacing: 0.1em;
+    color: black;
+    transition: all 0.5s ease;
 }
 .menu{
     display: flex;
 }
 li{
-list-style: none;    
+list-style: none;   
 }
 .menu a{
     margin-right: 50px;
 }
-.language{
+.tel{
     margin-left: auto;
 }
 .logo{
     margin-right: 60px;
 }
-.dropdown{
-    display: inline-block;
+
+.nav a:hover{
+    background-color: black;
+    color:white;
+    padding: 10px;
 }
-.dropdown-content{
-    display: none;
-}
+

@@ -1,0 +1,54 @@
+.inject {
+  display: flex;
+  font-weight: bold;
+}
+.capital-name {
+  display: block;
+  float: left;
+  margin: 10px 5px;
+}
+.country-name {
+  float: left;
+  margin: 10px 5px;
+}
+.country-name input {
+  background-color: #f9f9f9;
+  display: block;
+  height: 25px;
+  border:1px solid #9292909f;
+}
+.capital-name input {
+  background-color: #f9f9f9;
+  display: block;
+  height: 25px;
+  border:1px solid #9292909f;
+}
+.btn-success{
+    background-color: rgba(4, 136, 22, 0.507);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5%;
+    margin-right: 5px;
+}
+.btn-danger{
+    background-color: rgba(182, 6, 6, 0.507);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5%;
+    margin-right: 5px;
+}
+.btn-primary{
+    background-color: rgba(15, 40, 180, 0.685);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5%;
+}
+.all-btn{
+    margin: 5px;
+}

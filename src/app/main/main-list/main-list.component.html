@@ -1,2 +1,11 @@
+<section class="main-list">
+    <div class="new-town">
+        <button class="btn-primary">New City</button>
+    </div>
+    <hr>
+    <div class="row">
+        <app-main-items *ngFor="let cityEl of cities"
+        [city]="cityEl"></app-main-items>
+    </div>
+</section>
 
-<app-main-items></app-main-items>

@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'new-test-self';
+loadedfeat = 'home';
+
+  onNavigate(feat:string){
+    this.loadedfeat = feat;
+  }
 }

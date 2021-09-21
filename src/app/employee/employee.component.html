@@ -1,4 +1,9 @@
-
+<div class="container">
 <app-employee-edit></app-employee-edit>
-<hr>
-<p>the list</p>
+<hr />
+<div class="list-cities">
+  <a href="#" style="cursor: pointer" class="list" *ngFor="let capital of countries"
+    >{{ capital.name }} ({{ capital.cntr }})
+  </a>
+</div>
+</div>

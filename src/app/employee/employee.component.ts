@@ -1,3 +1,4 @@
+import { Capital } from './../shared/capitals.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./employee.component.css']
 })
 export class EmployeeComponent implements OnInit {
-
+  countries: Capital[] = [
+    new Capital('Astana', "Kazakhsatan")
+  ]
   constructor() { }
 
   ngOnInit(): void {

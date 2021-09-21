@@ -1,0 +1,13 @@
+.row{
+    display: flex;
+    padding: 20px 0 ;
+}
+.col-1{
+    flex:50%
+}
+.col-2{
+    flex:50%
+}
+.home-page{
+    background: url(../../assets/img/background1.jpg) no-repeat center;
+}
