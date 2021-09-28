@@ -1,17 +1,17 @@
-<form>
+<form (ngSubmit)="onSubmitItem(f)" #f="ngForm">
   <div class="inject">
     <div class="capital-name">
       <label for="capital">Capital</label>
-      <input type="text" id="capital" />
+      <input type="text" id="capital" name="capital" ngModel required />
     </div>
     <div class="country-name">
       <label for="country">Country</label>
-      <input type="text" id="country" />
+      <input type="text" id="country" name="country" ngModel required/>
     </div>
   </div>
   <div class="all-btn">
-    <button class="btn-success" type="submit">Add</button>
-    <button class="btn-danger" type="button">Delete</button>
-    <button class="btn-primary" type="button">Clear</button>
+    <button class="btn-success" type="submit" [disabled]="!f.valid" (click)="onSaveData()">{{editMode ? 'Update' : 'Add'}}</button>
+    <button class="btn-danger" type="button" (click)="onDelete()">Delete</button>
+    <button class="btn-primary" type="button"(click)="onFetchdata()">fetch</button>
   </div>
 </form>

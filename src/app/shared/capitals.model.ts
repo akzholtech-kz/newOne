@@ -1,5 +1,5 @@
 export class Capital {
-    constructor(public name:string, public cntr: string) {
+    constructor(public name: string, public cntr: string) {
 
     }
 }

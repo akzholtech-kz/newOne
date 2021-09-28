@@ -1,11 +1,13 @@
 <section class="main-list">
     <div class="new-town">
-        <button class="btn-primary">New City</button>
+        <button class="btn-primary" (click)="onNewCity()">New City</button>
     </div>
     <hr>
     <div class="row">
-        <app-main-items *ngFor="let cityEl of cities"
-        [city]="cityEl"></app-main-items>
+        <app-main-items *ngFor="let cityEl of cities; let i = index"
+        [city]="cityEl"
+        [index]= "i"
+        ></app-main-items>
     </div>
 </section>
 

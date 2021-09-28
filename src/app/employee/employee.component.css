@@ -1,14 +1,12 @@
-.list-cities{
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 7px 20px;
-    margin-top: 20px;
-    background-color: #f9f9f9;
-    max-width:100%;
-    border: 1px solid rgb(204, 201, 201);
-    border-radius: 5px;
-}
-.list{
+.list {
+  display: block;
   text-decoration: none;
-    color: black;  
-    
+  color: black;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 7px 20px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  max-width: 100%;
+  border: 1px solid rgb(204, 201, 201);
+  border-radius: 5px;
 }

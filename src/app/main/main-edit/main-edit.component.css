@@ -1,0 +1,35 @@
+.btn{
+    padding:0;
+    margin-bottom: 10px;
+}
+.btn-s{
+    background-color: green;
+    color: white;
+    padding: 5px 15px;
+    border: none; 
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.btn-c{
+    background-color: brown;
+    color: white;
+    padding: 5px 15px;
+    border: none; 
+    border-radius: 3px;
+}
+label{
+    display: block;
+}
+
+.content input{
+    background-color: #f9f9f9;;
+    border: 1px solid gainsboro;
+    padding: 5px;
+}
+textarea{
+       background-color: #f9f9f9;;
+    border: 1px solid gainsboro; 
+} 
+/* .row{
+    float:right;
+} */

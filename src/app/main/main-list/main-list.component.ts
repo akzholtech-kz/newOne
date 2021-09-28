@@ -1,5 +1,7 @@
 import { City } from './../home.model';
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { MainService } from '../main.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-list',
@@ -7,19 +9,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-list.component.css'],
 })
 export class MainListComponent implements OnInit {
-  cities: City[] = [
-    new City(
-      'Astana',
-      'Capital of Kazakhstan',
-      'https://www.traveller.com.au/content/dam/images/h/1/5/i/o/y/image.related.articleLeadwide.620x349.h1cmga.png/1553130503713.jpg'
-    ),
-     new City(
-      'Astana',
-      'Capital of Kazakhstan',
-      'https://www.traveller.com.au/content/dam/images/h/1/5/i/o/y/image.related.articleLeadwide.620x349.h1cmga.png/1553130503713.jpg'
-    ),
-  ];
-  constructor() {}
+  cities: City[];
+  constructor(private mainservice: MainService,
+    private router: Router, private route: ActivatedRoute) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.cities = this.mainservice.getCity();
+  }
+ 
+  onNewCity(){
+    this.router.navigate(['new'], {relativeTo: this.route})
+  }
 }

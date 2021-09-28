@@ -1,9 +1,8 @@
 <div class="container">
 <app-employee-edit></app-employee-edit>
 <hr />
-<div class="list-cities">
-  <a href="#" style="cursor: pointer" class="list" *ngFor="let capital of countries"
-    >{{ capital.name }} ({{ capital.cntr }})
+  <a style="cursor: pointer" class="list" *ngFor="let capital of countries; let i = index"
+  (click)="onEdit(i)"
+    >{{capital.name}} ({{capital.cntr}})
   </a>
-</div>
 </div>
